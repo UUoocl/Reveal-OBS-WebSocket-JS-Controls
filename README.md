@@ -11,17 +11,16 @@ Enter the OBS WebSocket Server settings
 Enter the OBS WebSocket Server settings
 Add a <data> element to the index HTML page. The element attributes are for the websocket IP address, Port number and Password.  
 
-<data data-websocket-IP="localhost"  data-websocket-port="4455" data-websocket-password="YQSvkioY7rrKAn4z"></data>
+<data data-websocket-IP="localhost"  data-websocket-port="4455" data-websocket-password="xxxxxxxxxxxxxxxx"></data>
 
 ### Add the OBS Websocket library 
 Insert a <script> element to link the OBS WebSocket library.
-<script src="lib/obs-ws-controls.js"></script>
+<script src="lib/reveal-obs-ws-events.js"></script>
 
 In the Reveal Initialize section add the OBS WebSocket library name. 
-code `
-plugins: [RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight, obsSlideNavigation],
 
-obsSlideNavigation
+code `
+plugins: [RevealZoom, RevealNotes, RevealMarkdown, RevealHighlight, RevealOBSws],
 `
 
 ## Configure slides
